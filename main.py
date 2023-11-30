@@ -19,7 +19,7 @@ url = input('Enter embeds url: ')
 # firefox_options.add_argument('--disable-dev-shm-usage')
 # service = Service(executable_path="./geckodriver.exe")
 # driver = webdriver.Firefox(service=service, options=firefox_options)
-# Create a BeautifulSoup object and specify the parser library at the same time
+
 response = requests.get(url)
 
 soup = BeautifulSoup(response.text, "lxml")
