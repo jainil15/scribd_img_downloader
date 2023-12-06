@@ -50,7 +50,7 @@ for i in x1:
         images.append(temps.find("img")['orig'][2:-3])
 
         reqimg = requests.get(temps.find("img")['orig'][2:-3], stream=True)
-        file_location = f"C:/D/{index}.jpg"
+        file_location = f"./{index}.jpg"
 
         with open(file_location, 'wb') as f:
             f.write(reqimg.content)
